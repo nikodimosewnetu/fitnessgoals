@@ -1,0 +1,5 @@
+{
+  "model": "gpt-4o-mini",
+  "input": "Give me a fitness tip for beginners.",
+  "store": true
+}

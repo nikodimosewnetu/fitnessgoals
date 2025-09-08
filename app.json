@@ -1,42 +1,66 @@
 {
   "expo": {
-    "name": "fitnessprogressmvp",
-    "slug": "fitnessprogressmvp",
+    "name": "CAPTURE FIT",
+    "slug": "capturefit",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "fitnessprogressmvp",
+    "icon": "./assets/images/capturefit-logo.png",
+    "scheme": "capturefit",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.addyde.capturefit",
+      "buildNumber": "1.0.0",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "We use the camera to capture progress photos.",
+        "NSPhotoLibraryUsageDescription": "We need access to your photos so you can select and analyze progress images.",
+        "NSPhotoLibraryAddUsageDescription": "We save processed images to your library when you choose to export."
+      }
     },
+
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/images/capturefit-logo.png",
+        "backgroundColor": "#000000"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.addyde.capturefit"
     },
+
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/capturefit-logo.png"
     },
+
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/capturefit-logo.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "backgroundColor": "#000000"
         }
       ]
     ],
-    "experiments": {
-      "typedRoutes": true
+
+    "experiments": { "typedRoutes": true },
+
+    "splash": {
+      "image": "./assets/images/capturefit-logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+
+    "extra": {
+      "router": {},
+      "eas": { "projectId": "18a9772b-423c-4760-a845-bfd539cc2988" },
+      "EXPO_PUBLIC_SUPABASE_URL": "https://vpnitpweduycfmndmxsf.supabase.co",
+      "EXPO_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZwbml0cHdlZHV5Y2ZtbmRteHNmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUyOTU3MjksImV4cCI6MjA3MDg3MTcyOX0.LRVY6boXeixgCHJi1BelSdO6UHIePJYIJk-T7eWxY9s"
     }
   }
 }
